@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= users %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Hello World <%= users.name %></h1>
+    <p>Welcome to <%= users.name %></p>
+
+    <ul>
+      <% for(var i = 0; i < users.users.length; i++) { %>
+      <li><%= users[i].name %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= user %></title>
+</head>
+<body>
+  <h1>Hello <%= user %>! You are now logged in.</h1>
+  <form method="post" action="/newUser/addInventory">
+    <p>What item would you like to add?</p><input type="text" name="item">
+    <p>Add to Inventory</p><button type="submit" value="<%= username %>" name="username">Submit</button>
+  </form>
+  <form method="post" action="/newUser/inventory">
+    <p>Request Inventory</p><button type="submit" value="<%= username %>" name="username">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form method="post" action="/newUser">
+      <p>Enter your first name.</p><input type="text" value="<%= name %>" name="first"><br/>
+      <p>Enter your password.</p><input type="password" name="password"><br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
